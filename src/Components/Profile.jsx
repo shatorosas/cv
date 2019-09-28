@@ -15,14 +15,14 @@ const Profile = () => {
           <div className="social">
             <a
               target="_blank"
-              href="https://github.com/"
+              href="https://github.com/shatorosas/cv"
               rel="noopener noreferrer"
             >
               <span className="fab fa-github"></span>
             </a>
             <a
               target="_blank"
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/gabriel-rosas/"
               rel="noopener noreferrer"
             >
               <span className="fab fa-linkedin"></span>
