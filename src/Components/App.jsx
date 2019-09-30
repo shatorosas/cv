@@ -17,19 +17,19 @@ const App = () => {
     >
       <div className="app container">
         <Container className="app__container" fluid={true} as="div">
-          <Row>
-            <Col sx={12} m={12} l={4} >
+          <Row className="justify-content-md-center">
+            <Col xs={12} md={12} lg={1}>
               <Menu />
             </Col>
-            <Col sx={12} m={12} l={4}>
+            <Col xs={12} md={12} lg={5}>
               <Profile />
             </Col>
-            <Col sx={12} m={12} l={4}>
-              <Resume />
+            <Col xs={12} md={12} lg={6}>
+              <Works  />
+              <Resume className="hide"/>
+              <Contact className="hide"/>
             </Col>
           </Row>
-          <Contact />
-          <Works />
         </Container>
       </div>
     </div>

@@ -1,8 +1,10 @@
 .app {
-  display: flex;
   height: 100vh;
 }
 
 .app__container {
-  align-self: center;
+}
+.hide {
+  opacity: 0;
+  height: 0px;
 }
