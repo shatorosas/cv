@@ -59,7 +59,10 @@
   color: #78cc6d;
 }
 
-.header .top-menu ul li.active a .icon, .header .top-menu ul li.active a .link, .header .top-menu ul li:hover a .icon, .header .top-menu ul li:hover a .link {
+.header .top-menu ul li.active a .icon,
+.header .top-menu ul li.active a .link,
+.header .top-menu ul li:hover a .icon,
+.header .top-menu ul li:hover a .link {
   color: #78cc6d;
 }
 
@@ -80,7 +83,7 @@
   font-size: 11px;
   font-weight: 500;
   text-transform: uppercase;
-  transition: all .3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .header .top-menu ul li a .icon {
@@ -103,5 +106,46 @@
   color: #171717;
   line-height: 40px;
   border-radius: 30px;
-  transition: all .3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
+    position: fixed;
+    max-width: 660px;
+
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header .top-menu {
+    margin: 0 auto;
+    display: flex;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+  }
+
+  .header .top-menu ul {
+    display: flex;
+    width: 100%;
+  }
+
+  .header .top-menu ul li {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    max-width: 480px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .header {
+    width: 100%;
+  }
 }

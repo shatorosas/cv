@@ -1,0 +1,205 @@
+.resume li {
+  list-style: none;
+}
+.resume {
+  margin: 20px 0 50px 10px;
+  list-style: none;
+  position: relative;
+  padding: 0 0 0 50px;
+  display: inline-block;
+  width: 96%;
+}
+
+.resume li {
+  position: relative;
+  margin-left: 30px;
+  margin-right: 20px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+.resume li > span {
+  width: 2px;
+  height: 100%;
+  background: #777777;
+  left: -30px;
+  top: 0;
+  position: absolute;
+}
+
+ul.resume li > span:before,
+ul.resume li > span:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 90%;
+  border: 2px solid #777777;
+  position: absolute;
+  left: -4px;
+  top: -10px;
+}
+
+ul.resume li span:after {
+  top: 100%;
+}
+
+ul.resume li > span {
+  width: 2px;
+  height: 100%;
+  background: #777777;
+  left: -30px;
+  top: 0;
+  position: absolute;
+}
+
+span.number {
+  height: 100%;
+}
+
+span.number span:first-child {
+  top: -16px;
+}
+span.number span:last-child {
+  top: 79%;
+}
+span.number span {
+  position: absolute;
+  left: -43px;
+  font-weight: bold;
+}
+
+ul.resume li span:after {
+  top: 100%;
+}
+
+ul.resume li:not(:first-child) {
+  margin-top: 70px;
+}
+
+.info span {
+  display: block;
+}
+
+.resume__project {
+  color: #333333;
+  font-weight: 500;
+}
+
+.resume__tech-used {
+  font-weight: 600;
+  color: #78cc6d;
+  font-size: 80%;
+  margin-bottom: 4px;
+}
+
+.resume__summary {
+  color: #666666;
+  margin-bottom: 4px;
+}
+
+.resume__roles {
+  color: #333333;
+  font-size: 80%;
+}
+
+.resume__title {
+  margin: 0px 0 15px 13px !important;
+}
+
+
+
+.resume__units {
+  font-weight: 600;
+  position: relative;
+  margin: 15px 0 0px 0px;
+  padding: 0 0 2px 0px;
+  font-size: 125%;
+}
+
+.resume__transcript-lnk {
+  font-size: 100%;
+  color: #171717;
+  font-weight: 500;
+  text-decoration: underline;
+  border: none;
+}
+
+.resume__transcript-lnk:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at top,
+    rgba(197, 202, 213, 0.7) 0,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+.resume__transcript-lnk:hover {
+  color: #78cc6d;
+}
+
+.resume__transcript-lnk {
+  transition: all 0.3s ease 0s;
+}
+
+.resume__cert-unit {
+  margin: 15px 0 15px 15px;
+  padding: 0 0 10px 0px;
+  background-color: #f8f8f8;
+}
+
+.resume__container-main {
+  overflow: hidden;
+  height: 560px;
+  width: 100%;
+}
+
+.resume__container-experience {
+  overflow: auto;
+  height: 560px;
+}
+
+.resume__container-education {
+  overflow: auto;
+  height: 560px;
+}
+
+.resume__section {
+  padding-right: 1px;
+}
+
+@media (max-width: 1199px) {
+  .resume__container-main {
+    overflow: auto;
+    height: 555px;
+    width: 103%;
+  }
+
+  .resume__container-experience {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .resume__container-education {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .resume__section {
+    padding-right: 15px;
+  }
+
+  .resume__container-education .resume__title {
+    margin: 30px 0 30px 18px !important;
+  }
+}

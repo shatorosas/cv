@@ -3,37 +3,67 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./app.css";
 
 import Menu from "./Menu";
-import Resume from "./Resume";
 import Contact from "./Contact";
 import Works from "./Works";
 import Profile from "./Profile";
+import About from "./About";
+import Resume from "./Resume/Resume";
+import Skills from "./Skills/Skills";
 
-const App = () => {
-  return (
-    <div
-      style={{
-        background: "linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%)"
-      }}
-    >
-      <div className="app container">
-        <Container className="app__container" fluid={true} as="div">
-          <Row className="justify-content-md-center">
-            <Col xs={12} md={12} lg={1}>
-              <Menu />
+class App extends React.Component {
+  state = {
+    aboutActive: true,
+    skillsActive: false,
+    resumeActive: false,
+    worksActive: false,
+    contactActive: false
+  };
+
+  render() {
+    return (
+      <div
+        className="row justify-content-center align-items-center"
+        style={{
+          background:
+            "linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%)",
+          height: "100vh",
+          width: "auto",
+          overflow: "hidden"
+        }}
+      >
+        <Container className="app__container" as="div">
+          <Row className="justify-content-center align-items-center">
+            <Col md={12} lg={1} >
+              <Row className="justify-content-end" style={{marginRight:"0px"}}>
+                <Menu
+                  onClick={selected => {
+                    this.setState({
+                      aboutActive: selected === "about",
+                      skillsActive: selected === "skills",
+                      resumeActive: selected === "resume",
+                      worksActive: selected === "works",
+                      contactActive: selected === "contact"
+                    });
+                  }}
+                />
+              </Row >
             </Col>
-            <Col xs={12} md={12} lg={5}>
+            <Col md={12} lg={5} className="no-left-padding no-right-padding">
               <Profile />
             </Col>
-            <Col xs={12} md={12} lg={6}>
-              <Works  />
-              <Resume className="hide"/>
-              <Contact className="hide"/>
+            <Col md={12} lg={6} className="no-left-padding no-right-padding">
+              <div >
+                <About active={this.state.aboutActive} />
+                <Skills active={this.state.skillsActive} />
+                <Works active={this.state.worksActive} />
+                <Resume active={this.state.resumeActive} />
+                <Contact active={this.state.contactActive} />
+              </div>
             </Col>
           </Row>
         </Container>
       </div>
-    </div>
-  );
-};
-
+    );
+  }
+}
 export default App;

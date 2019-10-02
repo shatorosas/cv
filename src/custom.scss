@@ -1,0 +1,109 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 90%
+) !default;
+$green: #78cc6d;
+$dark-green: rgb(93, 177, 114);
+$color1: #3f8037;
+$color2: #8d86d5;
+$dark-color2: #5247bf;
+$color3: #78cc6d;
+$color4: #996442;
+$color5: #80573d;
+
+$primary: $green;
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px $dark-color2;
+  box-shadow: inset 0 0 5px $dark-color2;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color2;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $dark-color2;
+}
+
+.title {
+  margin: 0 0 15px 0;
+  padding: 0 0 5px 0;
+  position: relative;
+  font-size: 17px;
+  color: #171717;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.title:before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(120, 204, 109, 0.4) 0,
+    rgba(120, 204, 109, 0.01) 100%
+  );
+  z-index: -1;
+  border-radius: 30px;
+}
+
+.title:after {
+  content: "";
+  position: absolute;
+  left: -60px;
+  bottom: -15px;
+  width: 95%;
+  height: 1px;
+  background: radial-gradient(
+    ellipse at left,
+    rgba(197, 202, 213, 0.7) 0,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+.border-line-v:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at top,
+    rgba(197, 202, 213, 0.7) 0,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+.border-line-h:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: radial-gradient(
+    ellipse at left,
+    rgba(197, 202, 213, 0.7) 0,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+.clear {
+  clear: both;
+}

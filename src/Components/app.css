@@ -1,10 +1,55 @@
 .app {
   height: 100vh;
 }
-
-.app__container {
+.app__main {
+  width: 100%;
+  background-color: #fff;
 }
 .hide {
   opacity: 0;
-  height: 0px;
+  visibility: hidden;
+  animation: hide 1s both;
+}
+
+.no-left-padding {
+  padding-left: 0px !important;
+}
+
+.no-right-padding {
+  padding-right: 0px !important;
+}
+
+.section {
+  top: -287.5px;
+  position: absolute;
+  height: 575px;
+  padding: 15px;
+
+  width: 100% !important;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.slide {
+  animation: slide 1s both;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0 !important;
+    transform: translate3d(-70%, 0, 0);
+  }
+  to {
+    opacity: 1 !important;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(-70%, 0, 0);
+  }
 }

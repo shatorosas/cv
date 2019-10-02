@@ -10,8 +10,8 @@ const Profile = () => {
           <div className="profile__image">
             <img src="/images/profile.png" alt="Gabriel Rosas" />
           </div>
-          <div className="title">Gabriel Rosas</div>
-          <div className="subtitle">Software Developer</div>
+          <div className="profile__title">Gabriel Rosas</div>
+          <div className="profile__subtitle">Software Developer</div>
           <div className="social">
             <a
               target="_blank"
@@ -27,10 +27,24 @@ const Profile = () => {
             >
               <span className="fab fa-linkedin"></span>
             </a>
+            <a
+              target="_blank"
+              href="mailto:gabo.roses@gmail.com"
+              rel="noopener noreferrer"
+            >
+              <span className="fas fa-envelope"></span>
+            </a>
+            <a
+              href="tel:+526531191477"
+              target="_blank"
+              className="about__lnk"
+            >
+              <span className="fas fa-phone-square-alt"></span>
+            </a>
           </div>
         </div>
         <div className="lnks">
-          <a href="#" className="lnk">
+          <a href="CV_English.pdf" className="lnk" target="_blank">
             <span className="text">Download CV</span>
             <span className="fas fa-download"></span>
           </a>
