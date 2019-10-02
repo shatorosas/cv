@@ -276,3 +276,9 @@
     margin-top: 72px;
   }
 }
+
+@media (max-width: 575px) {
+  .works__section{
+    margin:0px 13px;
+  }
+}

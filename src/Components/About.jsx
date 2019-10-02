@@ -4,7 +4,7 @@ import "./about.css";
 const About = props => {
   return (
     <div className={"section " + (props.active ? "slide" : "hide")}>
-      <div className="">
+      <div className="about__section">
         <div className="">
           <div className="title">About Me</div>
 
@@ -27,7 +27,15 @@ const About = props => {
               <div className="about__info-list">
                 <ul>
                   <li>
-                    <i className="far fa-calendar-alt"></i> 12/08/1981
+                    <a
+                      href="https://calendar.google.com/calendar/r/month/1981/12/8?pli=1"
+                      target="_blank"
+                      className="about__lnk"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="far fa-calendar-alt"></i> <br />
+                      12/08/1981
+                    </a>
                   </li>
                   <li>
                     <a
@@ -36,7 +44,8 @@ const About = props => {
                       className="about__lnk"
                       rel="noopener noreferrer"
                     >
-                      <i className="fas fa-home"></i> Mexicali, B.C.
+                      <i className="fas fa-home"></i> <br />
+                      Mexicali, B.C.
                     </a>
                   </li>
                   <li>
@@ -46,7 +55,8 @@ const About = props => {
                       target="_blank"
                       className="about__lnk"
                     >
-                      <i className="fas fa-phone-square-alt"></i>{" "}
+                      <i className="fas fa-phone-square-alt"></i>
+                      <br />
                       +52(653)119-1477
                     </a>
                   </li>
@@ -57,7 +67,8 @@ const About = props => {
                       target="_blank"
                       className="about__lnk"
                     >
-                      <i className="fas fa-envelope"></i> gabo.roses@gmail.com
+                      <i className="fas fa-envelope"></i> <br />
+                      gabo.roses@gmail.com
                     </a>
                   </li>
                 </ul>

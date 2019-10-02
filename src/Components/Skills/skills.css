@@ -67,3 +67,9 @@
     height: 100%;
   }
 }
+
+@media (max-width: 575px) {
+  .skills__section{
+    margin:0px 13px;
+  }
+}

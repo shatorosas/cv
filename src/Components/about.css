@@ -1,48 +1,59 @@
 .about__title {
-    margin: 0 0 15px 0;
-    padding: 0 0 5px 0;
-    position: relative;
-    font-size: 17px;
-    color: #171717;
-    line-height: 21px;
-    font-weight: 500;
+  margin: 0 0 15px 0;
+  padding: 0 0 5px 0;
+  position: relative;
+  font-size: 17px;
+  color: #171717;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.about__content {
+  padding: 15px;
+}
+
+.about__info-list ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.about__info-list ul li {
+  display: inline-block;
+  width: 48%;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.about__info-list ul li a i {
+  font-size: 250%;
+}
+
+.about__info-list ul li strong {
+  display: inline-block;
+  font-size: 13px;
+  color: #171717;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.about__lnk {
+  font-size: 100%;
+  color: #171717;
+  font-weight: 500;
+  text-decoration: underline;
+  border: none;
+}
+
+.about__lnk {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 575px) {
+  .about__section {
+    margin: 0px 13px;
   }
-  
-  .about__content{
-      padding:15px;
-  }
-  
-  .about__info-list ul {
-      list-style: none;
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-left: 0;
-  }
-  
-  .about__info-list ul li {
-      display: inline-block;
-      width: 48%;
-      line-height: 1.6;
-  }
-  
-  .about__info-list ul li strong {
-      display: inline-block;
-      font-size: 13px;
-      color: #171717;
-      font-weight: 500;
-      text-transform: uppercase;
-  }
-  
-  .about__lnk {
-      font-size: 100%;
-      color: #171717;
-      font-weight: 500;
-      text-decoration: underline;
-      border: none;
-  }
-  
-  .about__lnk {
-      -webkit-transition: all 0.3s ease 0s;
-      -o-transition: all 0.3s ease 0s;
-      transition: all 0.3s ease 0s;
-  }
+}

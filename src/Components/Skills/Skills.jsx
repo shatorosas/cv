@@ -60,7 +60,7 @@ class Skills extends React.Component {
   render() {
     return (
       <div className={"section " + (this.props.active ? "slide" : "hide")}>
-        <div className="content skills">
+        <div className="skills__section">
           <div className="title">My Skills</div>
           <div className="skills__main">{this.renderTypes()}</div>
         </div>
