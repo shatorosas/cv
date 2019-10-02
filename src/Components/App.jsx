@@ -8,7 +8,7 @@ import Works from "./Works";
 import Profile from "./Profile";
 import About from "./About";
 import Resume from "./Resume/Resume";
-import Skills from "./Skills/Skills";
+import Skills from "./Skills/Skills.jsx";
 
 class App extends React.Component {
   state = {
@@ -33,8 +33,11 @@ class App extends React.Component {
       >
         <Container className="app__container" as="div">
           <Row className="justify-content-center align-items-center">
-            <Col md={12} lg={1} >
-              <Row className="justify-content-end" style={{marginRight:"0px"}}>
+            <Col md={12} lg={1}>
+              <Row
+                className="justify-content-end"
+                style={{ marginRight: "0px" }}
+              >
                 <Menu
                   onClick={selected => {
                     this.setState({
@@ -46,13 +49,13 @@ class App extends React.Component {
                     });
                   }}
                 />
-              </Row >
+              </Row>
             </Col>
             <Col md={12} lg={5} className="no-left-padding no-right-padding">
               <Profile />
             </Col>
             <Col md={12} lg={6} className="no-left-padding no-right-padding">
-              <div >
+              <div>
                 <About active={this.state.aboutActive} />
                 <Skills active={this.state.skillsActive} />
                 <Works active={this.state.worksActive} />
