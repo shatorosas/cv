@@ -112,8 +112,6 @@ ul.resume li:not(:first-child) {
   margin: 0px 0 15px 13px !important;
 }
 
-
-
 .resume__units {
   font-weight: 600;
   position: relative;
@@ -137,6 +135,12 @@ ul.resume li:not(:first-child) {
   top: 0;
   width: 1px;
   height: 100%;
+  background: -o-radial-gradient(
+    top,
+    ellipse,
+    rgba(197, 202, 213, 0.7) 0,
+    rgba(255, 255, 255, 0) 70%
+  );
   background: radial-gradient(
     ellipse at top,
     rgba(197, 202, 213, 0.7) 0,
@@ -149,6 +153,8 @@ ul.resume li:not(:first-child) {
 }
 
 .resume__transcript-lnk {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
@@ -165,12 +171,14 @@ ul.resume li:not(:first-child) {
 }
 
 .resume__container-experience {
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   height: 560px;
 }
 
 .resume__container-education {
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   height: 560px;
 }
 
@@ -180,7 +188,8 @@ ul.resume li:not(:first-child) {
 
 @media (max-width: 1199px) {
   .resume__container-main {
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     height: 555px;
     width: 103%;
   }
@@ -201,5 +210,20 @@ ul.resume li:not(:first-child) {
 
   .resume__container-education .resume__title {
     margin: 30px 0 30px 18px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .resume__container-main {
+    height: 100%;
+  }
+
+  .resume__container-experience {
+    height: 100%;
+    margin-right: 15px;
+  }
+
+  .resume__container-education {
+    height: 100%;
   }
 }

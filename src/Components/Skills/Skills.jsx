@@ -7,7 +7,7 @@ class Skills extends React.Component {
   renderSkills(skills) {
     return skills.map(skill => {
       return (
-        <li className="border-line-h">
+        <li key={skill.name} className="border-line-h">
           <div>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               <div className="skills__skill-name">{skill.name}</div>
@@ -37,12 +37,12 @@ class Skills extends React.Component {
   renderTypes() {
     return skills.map(type => {
       return (
-        <div className="row" style={{ marginLeft: "0px" }}>
-          <div className="border-line-v">
+        <div key={type.type} className="row" style={{ marginLeft: "0px" }}>
+          <div className="border-line-v" style={{ width: "100%" }}>
             <div className="skills-list">
               <div className="skills__skill-title border-line-h">
                 <div className="icon">
-                  <i class={type.icon}></i>
+                  <i className={type.icon}></i>
                 </div>
                 <div className="skills__skill-name">{type.type}</div>
               </div>
@@ -59,10 +59,7 @@ class Skills extends React.Component {
 
   render() {
     return (
-      <div
-        id="#skills-card"
-        className={"section " + (this.props.active ? "slide" : "hide")}
-      >
+      <div className={"section " + (this.props.active ? "slide" : "hide")}>
         <div className="content skills">
           <div className="title">My Skills</div>
           <div className="skills__main">{this.renderTypes()}</div>

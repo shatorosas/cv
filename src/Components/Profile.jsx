@@ -38,6 +38,7 @@ const Profile = () => {
               href="tel:+526531191477"
               target="_blank"
               className="about__lnk"
+              rel="noopener noreferrer"
             >
               <span className="fas fa-phone-square-alt"></span>
             </a>
@@ -48,7 +49,14 @@ const Profile = () => {
             <span className="text">Download CV</span>
             <span className="fas fa-download"></span>
           </a>
-          <a href="#" className="lnk discover">
+          <a
+            href="#contact-card"
+            className="lnk discover"
+            onClick={() => {
+              if (window.innerWidth >= 992)
+                window.open("mailto:gabo.roses@gmail.com");
+            }}
+          >
             <span className="text">Contact Me</span>
             <span className="fas fa-envelope-open-text"></span>
           </a>

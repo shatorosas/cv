@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./menu.css";
 class Menu extends React.Component {
   state = {

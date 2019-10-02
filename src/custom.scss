@@ -17,6 +17,10 @@ $primary: $green;
 
 @import "~bootstrap/scss/bootstrap.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -53,6 +57,11 @@ $primary: $green;
   top: 0;
   width: 30px;
   height: 30px;
+  background: -o-linear-gradient(
+    315deg,
+    rgba(120, 204, 109, 0.4) 0,
+    rgba(120, 204, 109, 0.01) 100%
+  );
   background: linear-gradient(
     135deg,
     rgba(120, 204, 109, 0.4) 0,
@@ -69,6 +78,12 @@ $primary: $green;
   bottom: -15px;
   width: 95%;
   height: 1px;
+  background: -o-radial-gradient(
+    left,
+    ellipse,
+    rgba(197, 202, 213, 0.7) 0,
+    rgba(255, 255, 255, 0) 70%
+  );
   background: radial-gradient(
     ellipse at left,
     rgba(197, 202, 213, 0.7) 0,
@@ -83,6 +98,12 @@ $primary: $green;
   top: 0;
   width: 1px;
   height: 100%;
+  background: -o-radial-gradient(
+    top,
+    ellipse,
+    rgba(197, 202, 213, 0.7) 0,
+    rgba(255, 255, 255, 0) 70%
+  );
   background: radial-gradient(
     ellipse at top,
     rgba(197, 202, 213, 0.7) 0,
@@ -97,6 +118,12 @@ $primary: $green;
   bottom: 0;
   width: 100%;
   height: 1px;
+  background: -o-radial-gradient(
+    left,
+    ellipse,
+    rgba(197, 202, 213, 0.7) 0,
+    rgba(255, 255, 255, 0) 70%
+  );
   background: radial-gradient(
     ellipse at left,
     rgba(197, 202, 213, 0.7) 0,
@@ -106,4 +133,10 @@ $primary: $green;
 
 .clear {
   clear: both;
+}
+
+@media (max-width: 991px) {
+  .title:before {
+    z-index: 0;
+  }
 }

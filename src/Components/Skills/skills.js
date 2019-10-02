@@ -11,8 +11,7 @@ export default [
       { name: "asp.Net", years: 2, expertise: 70 },
       { name: "MVC", years: 2, expertise: 80 },
       { name: "Ext JS", years: 2, expertise: 65 },
-      { name: "Node.js", years: 2, expertise: 60 },
-      { name: "MVC", years: 2, expertise: 80 }
+      { name: "Node.js", years: 2, expertise: 60 }
     ]
   },
   {

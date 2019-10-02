@@ -27,33 +27,37 @@ const About = props => {
               <div className="about__info-list">
                 <ul>
                   <li>
-                    <i class="far fa-calendar-alt"></i> 12/08/1981
+                    <i className="far fa-calendar-alt"></i> 12/08/1981
                   </li>
                   <li>
                     <a
                       href="https://www.google.com/maps/place/Mexicali,+Baja+California/@32.6474227,-115.3690192,16.25z/data=!4m5!3m4!1s0x80d7700ca877ddd3:0xd40033a0e5cdf59a!8m2!3d32.6245389!4d-115.4522623"
                       target="_blank"
                       className="about__lnk"
+                      rel="noopener noreferrer"
                     >
-                      <i class="fas fa-home"></i> Mexicali, B.C.
+                      <i className="fas fa-home"></i> Mexicali, B.C.
                     </a>
                   </li>
                   <li>
                     <a
                       href="tel:+526531191477"
+                      rel="noopener noreferrer"
                       target="_blank"
                       className="about__lnk"
                     >
-                      <i class="fas fa-phone-square-alt"></i> +52(653)119-1477
+                      <i className="fas fa-phone-square-alt"></i>{" "}
+                      +52(653)119-1477
                     </a>
                   </li>
                   <li>
                     <a
                       href="mailto:gabo.roses@gmail.com"
+                      rel="noopener noreferrer"
                       target="_blank"
                       className="about__lnk"
                     >
-                      <i class="fas fa-envelope"></i> gabo.roses@gmail.com
+                      <i className="fas fa-envelope"></i> gabo.roses@gmail.com
                     </a>
                   </li>
                 </ul>

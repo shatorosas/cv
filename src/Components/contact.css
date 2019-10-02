@@ -1,24 +1,25 @@
-.contact__content{
-    padding:15px;
+.contact__content {
+  padding: 15px;
+  min-height: 400px;
 }
 
 .contact__info-list ul {
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .contact__info-list ul li {
-    display: inline-block;
-    width: 48%;
-    line-height: 1.6;
+  display: inline-block;
+  width: 48%;
+  line-height: 1.6;
 }
 
 .contact__info-list ul li strong {
-    display: inline-block;
-    font-size: 13px;
-    color: #171717;
-    font-weight: 500;
-    text-transform: uppercase;
+  display: inline-block;
+  font-size: 13px;
+  color: #171717;
+  font-weight: 500;
+  text-transform: uppercase;
 }

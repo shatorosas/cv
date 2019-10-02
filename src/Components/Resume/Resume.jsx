@@ -84,6 +84,7 @@ class Resume extends React.Component {
               href={unit.url}
               target="_blank"
               className="resume__transcript-lnk"
+              rel="noopener noreferrer"
             >
               Transcript
             </a>
@@ -123,7 +124,7 @@ class Resume extends React.Component {
               if (this.state.activeKeys.includes(employer.id)) {
                 this.setState({
                   activeKeys: this.state.activeKeys.filter(
-                    key => key != employer.id
+                    key => key !== employer.id
                   )
                 });
               } else {
@@ -168,10 +169,12 @@ class Resume extends React.Component {
           borderRadius: "4px",
           fontSize: "90%"
         }}
-        className={"section resume__section " + (this.props.active ? "slide" : "hide")}
+        className={
+          "section resume__section " + (this.props.active ? "slide" : "hide")
+        }
       >
         <div className="resume__container-main">
-          <Row style={{marginRight:"0px"}}>
+          <Row style={{ marginRight: "0px" }}>
             <Col md={12} lg={12} xl={6} style={{ paddingRight: "5px" }}>
               <div className="resume__container-experience">
                 <h3 className="resume__title title">Experience</h3>

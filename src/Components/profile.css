@@ -17,6 +17,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  -webkit-box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
   border-radius: 0 0 4px 0;
 }
@@ -28,6 +29,11 @@
   top: -15px;
   width: 100%;
   height: 100%;
+  background: -o-linear-gradient(
+    315deg,
+    rgba(120, 204, 109, 0.4) 0,
+    rgba(120, 204, 109, 0.01) 100%
+  );
   background: linear-gradient(
     135deg,
     rgba(120, 204, 109, 0.4) 0,
@@ -69,6 +75,7 @@
   width: 700px;
   height: 200px;
   background: #fff;
+  -ms-transform: rotate(12deg);
   transform: rotate(12deg);
   -webkit-transform: rotate(12deg);
   -moz-transform: rotate(12deg);
@@ -78,6 +85,7 @@
 .profile__background:after {
   left: auto;
   right: -25%;
+  -ms-transform: rotate(-6deg);
   transform: rotate(-6deg);
   -webkit-transform: rotate(-6deg);
   -moz-transform: rotate(-6deg);
@@ -136,6 +144,7 @@
 .social a .fab {
   font-size: 16px;
   color: #171717;
+  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
 }
@@ -143,6 +152,7 @@
 .social a .fas {
   font-size: 16px;
   color: #171717;
+  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
 }
@@ -166,7 +176,7 @@
 
 .social a:hover .fa-envelope {
   text-decoration: none;
-  color: #D44638;
+  color: #d44638;
 }
 
 .social a:hover .fa-phone-square-alt {
@@ -190,6 +200,12 @@
   top: 0;
   width: 100%;
   height: 1px;
+  background: -o-radial-gradient(
+    left,
+    ellipse,
+    rgba(197, 202, 213, 0.7) 0,
+    rgba(255, 255, 255, 0) 70%
+  );
   background: radial-gradient(
     ellipse at left,
     rgba(197, 202, 213, 0.7) 0,
@@ -219,6 +235,12 @@
   top: 0;
   width: 1px;
   height: 100%;
+  background: -o-radial-gradient(
+    top,
+    ellipse,
+    rgba(197, 202, 213, 0.7) 0,
+    rgba(255, 255, 255, 0) 70%
+  );
   background: radial-gradient(
     ellipse at top,
     rgba(197, 202, 213, 0.7) 0,
@@ -232,6 +254,8 @@
 }
 
 .lnk .text {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
@@ -242,5 +266,13 @@
   display: inline-block;
   vertical-align: middle;
   font-size: 18px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 991px) {
+  .profile__container {
+    margin-top: 72px;
+  }
 }
