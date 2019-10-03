@@ -16,9 +16,13 @@ const Works = props => {
               />
               <div className="card-body">
                 <h5 className="card-title">RSVP'er</h5>
-                <p className="card-text margin-bottom-70">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                <p className="card-text works__card-text">
+                  RSVP sending app made with <strong>React</strong>,{" "}
+                  <strong>Materializecss</strong> and{" "}
+                  <strong>google oauth</strong> for the front end,{" "}
+                  <strong>stripe</strong> for in-app payments, and a backend web
+                  api made with <strong>node.js</strong> and{" "}
+                  <strong>mongoose</strong>.
                 </p>
                 <div className="works__lnks">
                   <a
@@ -50,9 +54,9 @@ const Works = props => {
               />
               <div className="card-body">
                 <h5 className="card-title">Shato's kitchen</h5>
-                <p className="card-text margin-bottom-70">
+                <p className="card-text works__card-text">
                   Publicity for a fictional (for now) food delivery service,
-                  made with html and css
+                  made with <strong>html</strong> and <strong>css</strong>.
                 </p>
                 <div className="works__lnks">
                   <a
