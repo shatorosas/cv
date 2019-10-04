@@ -14,7 +14,7 @@ const Contact = props => {
                 <ul>
                   <li>
                     <a
-                      href="https://www.google.com/maps/place/Mexicali,+Baja+California/@32.6474227,-115.3690192,16.25z/data=!4m5!3m4!1s0x80d7700ca877ddd3:0xd40033a0e5cdf59a!8m2!3d32.6245389!4d-115.4522623"
+                      href="https://www.google.com/maps/place/Mexicali,+Baja+California/@32.6114112,-115.453447,13z/data=!4m5!3m4!1s0x80d7700ca877ddd3:0xd40033a0e5cdf59a!8m2!3d32.6245389!4d-115.4522623"
                       target="_blank"
                       className="about__lnk"
                       rel="noopener noreferrer"
