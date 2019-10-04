@@ -45,7 +45,11 @@ const Profile = () => {
           </div>
         </div>
         <div className="lnks">
-          <a href="CV_English.pdf" className="lnk" target="_blank">
+          <a
+            href="https://1drv.ms/b/s!Aq5rf7rznwmXuC10u_0E2DMUtprW"
+            className="lnk"
+            target="_blank"
+          >
             <span className="text">Download CV</span>
             <span className="fas fa-download"></span>
           </a>
