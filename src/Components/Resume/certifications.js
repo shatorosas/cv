@@ -1,6 +1,6 @@
 export default [
   {
-    trainscript: "974007",
+    transcript: "974007",
     url: "https://mcp.microsoft.com/Anonymous/Transcript/Validate",
     accessCode: "81081281",
     certifyingUnit: "Microsoft®",

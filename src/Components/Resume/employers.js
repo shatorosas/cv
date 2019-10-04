@@ -40,7 +40,7 @@ export default [
         endDate: "Oct 2016"
       },
       {
-        name: "JFCA Fist stage",
+        name: "JFCA First stage",
         technologies: ".NET framework, ASP.NET, SOAP services, Oracle",
         summary:
           "Project carried out in conjunction with the Digital Data Company, to achieve parallel to the digitalization of the documentary collection of the Special Boards of the Federal District.",

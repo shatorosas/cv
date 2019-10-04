@@ -77,7 +77,7 @@ class Resume extends React.Component {
   renderCertUnits() {
     return certifications.map(unit => {
       return (
-        <div key={unit.trainscript} style={{ maxWidth: "94%" }}>
+        <div key={unit.transcript} style={{ maxWidth: "94%" }}>
           <div className="resume__cert-unit">
             <h4 className="resume__units">{unit.certifyingUnit}</h4>
             <a
@@ -93,7 +93,7 @@ class Resume extends React.Component {
               style={{ marginRight: "0px" }}
             >
               <div className="col">
-                <span className="resume__roles">Trainscript id: 974007</span>
+                <span className="resume__roles">Transcript id: 974007</span>
               </div>
               <div className="col">
                 <span className="resume__roles">Access code: 81081281</span>
