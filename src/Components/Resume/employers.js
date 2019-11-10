@@ -1,7 +1,7 @@
 export default [
   {
     id: "0",
-    employer: "BTS",
+    employer: "BTS (2006-2019)",
     projects: [
       {
         name: "4G",
@@ -80,7 +80,7 @@ export default [
   },
   {
     id: "1",
-    employer: "SDS",
+    employer: "SDS (2005-2006)",
     projects: [
       {
         name: "CIAPEM 2005",
